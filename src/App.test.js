@@ -6,16 +6,16 @@ test("button has correct initial color and update", () => {
   render(<App />);
 
   // find and element with a role of button and text of 'Change to blue'
-  const colorButton = screen.getByRole('button', { name: 'Change to blue' });
+  const colorButton = screen.getByRole('button', { name: 'Change to Midnight Blue' });
 
   // expect the background color to be red.
-  expect(colorButton).toHaveStyle({ backgroundColor: 'red' });
+  expect(colorButton).toHaveStyle({ backgroundColor: 'MediumVioletRed' });
 
   fireEvent.click(colorButton);
 
     // expect the background color to be blue
-    expect(colorButton).toHaveStyle({ backgroundColor: 'blue' });
-    expect(colorButton.textContent).toBe('Change to red');
+    expect(colorButton).toHaveStyle({ backgroundColor: 'MidnightBlue' });
+    expect(colorButton.textContent).toBe('Change to MediumViolet Red');
 });
 
 test('initial conditions', () => {
