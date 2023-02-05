@@ -6,6 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
+  paths:
+    - "sundaes-on-demand"
   pull_request:
     branches: [ "main" ]
 
@@ -13,6 +15,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    default:
+      run:
+        working-directory: "./sundaes-on-demand"
 
     strategy:
       matrix:
