@@ -1,4 +1,4 @@
-import Col from "react-bootstrap/Col";
+import Col from "react-bootstrap/Col"
 
 export default function ToppingOptions({ name, imagePath }) {
   return (
@@ -9,5 +9,5 @@ export default function ToppingOptions({ name, imagePath }) {
         alt={`${name} topping`}
       />
     </Col>
-  );
+  )
 }
