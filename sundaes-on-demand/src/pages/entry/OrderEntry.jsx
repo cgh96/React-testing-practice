@@ -1,5 +1,5 @@
 const OrderEntry = () => {
-  return <div />
-}
+  return <div />;
+};
 
-export default OrderEntry
+export default OrderEntry;
